@@ -1,0 +1,536 @@
+:root{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: white;
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 0px;
+    margin: 0px;
+}
+/* start header */
+header {
+    background-color: #f4fcff;
+    height: 100vh;
+}
+/* start nav */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+nav figure{
+    display: flex;
+    align-items: center;
+}
+nav figcaption{
+    position: relative;
+    right: 10px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+nav button{
+    background-color: #347cc4;
+    border-radius: 30px;
+    width: 100px;
+    height: 35px;
+    color: white;
+    cursor: pointer;
+}
+/* end nav */
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin-top: 50px;
+}
+.header-content .content{
+    width: 500px;
+}
+.header-content .content h1{
+    font-size: 43px;
+}
+.header-content .content span{
+    color: blue;
+}
+.header-content button{
+    background-color: #347cc4;
+    color: white;
+    width: 135px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.header-content .hero-pic{
+    background-color: #e1effa;
+    position: relative;
+    width: 300px;
+    height: 230px;
+    border-radius: 20px;
+}
+.header-content .hero-pic img{
+    position: absolute;
+    bottom: 0px;
+    right: 29px;
+}
+.header-bottom{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    color: gray;
+}
+.header-bottom p {
+    font-size: 23px;
+    position: relative;
+    top: 50px;
+}
+/* end header */
+/* start about */
+.about{
+    background-color: #e1effa;
+    padding: 50px;
+    position: relative;
+    bottom: 10px;
+}
+.about .content{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding-left: 100px;
+}
+.about .content h2{
+    font-size: 100px; 
+}
+.about .content p{
+    width: 550px;
+    line-height: 1.5;
+    font-size: 20px;
+    color: gray;
+    word-spacing: 10px;
+    position: relative;
+    bottom: 20px;
+}
+.about .tasks{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.about .task{
+    display: flex;
+    gap: 30px;
+}
+.about .task p{
+    background-color: #347cc4;
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.about .task h3{
+    display: flex;
+    align-items: center;
+}
+/* end about */
+/* start expertise */
+.expertise{
+    background-color: #f4fcff;
+    padding: 50px;
+    position: relative;
+    bottom: 10px;
+}
+.expertise-container{
+    height: 220px;
+}
+.expertise h2{
+    margin-bottom: 30px;
+}
+.expertise .cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.expertise .card{
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+}
+.expertise .card div{
+    display: flex;
+    gap: 20px;
+}
+.expertise .card h3{
+    position: relative;
+    bottom: 20px;
+}
+.expertise .card p{
+    position: relative;
+    bottom: 20px;
+    line-height: 1.5;
+    color: gray;
+}
+/* end expertise */
+/* start mid-expertise */
+.mid-expertise .container{
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+.mid-expertise .work-experience{
+    position: relative;
+    right: 200px;
+}
+.mid-expertise .work-experience h2{
+    color: #347cc4;
+}
+.mid-expertise .experience h3{
+    position: relative;
+}
+.mid-expertise .experience h3::before{
+    content: "";
+    position: absolute;
+    background-color: #347cc4;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    left: -25px;
+    bottom: 7px;
+}
+.mid-expertise .experience p:last-child{
+    font-size: 14px;
+    color: gray;
+}
+.mid-expertise .skills h2{
+    color: #347cc4;
+}
+.mid-expertise .skill-item .item-info{
+    display: flex;
+    gap: 15px;
+}
+.mid-expertise .skill-item .item-info i{
+    color: gray;
+}
+.mid-expertise .skill-item .item-info h3{
+    position: relative;
+    bottom: 21px;
+}
+.mid-expertise .skill-item .parent{
+    position: relative;
+    bottom: 20px;
+    width: 200px;
+    height: 10px;
+    background-color: lightgray;
+    border-radius: 30px;
+}
+.mid-expertise .skill-item .child{
+    position: absolute;
+    background-color: #347cc4;
+    height: 10px;
+    width: 60%;
+    border-radius: 30px;
+}
+.mid-expertise .skill-item .second{
+    width: 100%;
+}
+.mid-expertise .skill-item .third{
+    width: 30%;
+}
+.mid-expertise .skill-item .fourth{
+    width: 80%;
+}
+.mid-expertise .skills img{
+    position: relative;
+    top: 50px;
+    left: 290px;
+}
+/* end mid-expertise */
+/* start bottom-expertise */
+.bottom-expertise{
+    margin-top: 50px;
+    padding: 50px;
+}
+.bottom-expertise .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+}
+.bottom-expertise .car-ds{
+    display: flex;
+    gap: 20px;
+}
+.bottom-expertise .car-ds .ca-rd{
+    width: 250px;
+    height: 450px;
+    background-color: #347cc4;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.bottom-expertise .car-ds .ca-rd i{
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+.bottom-expertise .car-ds .ca-rd h3{
+    font-size: 24px;
+}
+.bottom-expertise .car-ds .ca-rd p{
+    font-size: 14px;
+    color: lightgray;
+    line-height: 1.2;
+}
+.bottom-expertise .bottom-content h2{
+    font-size: 37px;
+}
+.bottom-expertise .bottom-content p{
+    font-size: 16px;
+    color: gray;
+    line-height: 1.5;
+    width: 400px;
+}
+.bottom-content .person{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    position: relative;
+}
+.bottom-content .person::before{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    background-color: lightgray;
+    bottom: 0;
+}
+.bottom-content .person img{
+    border-radius: 50%;
+}
+.bottom-content .person .person-info{
+    position: relative;
+    bottom: 8px;
+    line-height: 0.1;
+}
+.bottom-content .statics{
+    display: flex;
+    gap: 20px;
+}
+.bottom-content .statics .state{
+    width: 150px;
+}
+.bottom-content .state h4{
+    font-size: 30px;
+}
+/* end bottom-expertise */
+/* start portofolio */
+.portofolio{
+    background-color: #f4fcff;
+    padding: 50px;
+    position: relative;
+    bottom: 10px;
+}
+.portofolio .heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.portofolio h2{
+    margin-bottom: 30px;
+}
+.portofolio button{
+    background-color: #347cc4;
+    color: white;
+    width: 110px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    right: 20px;
+}
+.portofolio .cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+.portofolio .card{
+    width: 300px;
+    height: 380px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.portofolio .card img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+}
+.portofolio .card .card-info{
+    padding: 20px;
+}
+.portofolio .card .card-info h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.portofolio .card .card-info p{
+    color: gray;
+    line-height: 1.5;
+}
+/* end portofolio */
+/* start contact */
+.contact{
+    padding: 50px;
+    position: relative;
+    bottom: 10px;
+    background-color: #e1effa;
+}
+.contact .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact .details h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.contact .details .job-name{
+    font-size: 20px;
+    color: gray;
+}
+.contact .details .icons{
+    display: flex;
+    gap: 20px;
+}
+.contact .details .icons i{
+    cursor: pointer;
+}
+.contact .details p:last-child{
+    margin-top: 50px;
+    opacity: 50%;
+}
+.contact .form{
+    width: 600px;
+    height: 485px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+}
+.contact .form h2{
+    color: blue;
+    font-size: 50px;
+}
+.contact .container .design {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: -20px;
+    left: -20px;   
+    z-index: 0;
+    border-left: 20px solid #2a52be;
+    border-bottom: 20px solid #2a52be;
+    background-color: transparent;
+}
+.contact .form form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    top: 60px;
+}
+.contact .form form input{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 20px;
+    border: 1px solid #ccc;
+}
+.contact .form form textarea{
+    width: 100%;
+    height: 150px;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+.contact .form form button{
+    background-color: #347cc4;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    top: 20px;
+}
+/* end contact */
+/* start footer */
+footer{
+    background-color: #347cc4;
+    padding: 20px;
+    position: relative;
+    bottom: 10px;
+    color: white;
+}
+footer .footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer-content figure{
+    display: flex;
+    align-items: center;
+}
+footer .footer-content figcaption{
+    position: relative;
+    right: 10px;
+}
+footer .footer-content ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    position: relative;
+    right: 50px;
+}
+footer .footer-content a{
+    text-decoration: none;
+    color : white;
+}
+footer .footer-content .social-icons{
+    display: flex;
+    gap: 30px;
+    position: relative;
+    right: 50px;
+    align-items: center;
+}
+footer .footer-content .social-icons i{
+    cursor: pointer;
+}
+footer .footer-bottom{
+    text-align: center;
+    color: white
+}
+/* end footer */
